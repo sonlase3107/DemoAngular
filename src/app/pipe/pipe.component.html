@@ -1,0 +1,30 @@
+<h1>Pipe Currentcy</h1>
+<h2>
+    {{ subTotal | currency:'EUR':'symbol' }} ->currency:'EUR':'symbol'
+</h2>
+<h2>
+    {{ subTotal | currency:'VND':'symbol-narrow' }} ->currency:'VND':'symbol-narrow'
+</h2>
+<h2>
+    {{ subTotal | currency:'EUR':false }} -> currency:'EUR':false
+</h2>
+<h2>
+    {{ subTotal | currency:'EUR':false:'1.0-0' }} -> currency:'EUR':false:'1.0-0'
+</h2>
+<br>
+<h1>---------------------------------------------------------------------------------</h1>
+<h2>
+    {{ birthday | date:'mediumTime'}}
+</h2>
+<h1>---------------------------------------------------------------------------------</h1>
+<h2>
+    {{a | percent}}
+</h2>
+<h1>---------------------------------------------------------------------------------</h1>
+Round Pipe
+<h1>
+    {{ 1.9 | roundNum: false}}
+</h1>
+<h1>
+    {{ 1.9 | roundNum: true}}
+</h1>

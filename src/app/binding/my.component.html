@@ -1,0 +1,42 @@
+<!-- Variable Binding
+{{expression}}
+[target]="expression"
+bind-target="expression"
+
+
+<h1>English: {{en}}</h1>
+<h1>Viet Nam: {{vn}}</h1>
+<h1 [hidden]="check">Check: Hien thi neu la false</h1>
+<img [src]="img" alt="">  -->
+<!-- <img bind-src="img" alt=""> -->
+<!-- rang buoc du lieu bang 1 bien ten la img -->
+
+Event Binding
+<br />
+<!-- 
+(target)="statement"
+on-target="statement" -->
+
+<!-- <button (click)="click=!click">Click</button>
+<h1>{{click}}</h1> -->
+
+<!-- <button on-click="click=!click">Click</button>
+<h1>{{click}}</h1> -->
+
+Two-way binding
+
+<!-- <input type="text" placeholder="Enter name ..." [(ngModel)]="name">
+Your name is: {{name}} -->
+<br>
+Binding Style
+<!-- <div>
+    <h1 [class]="styleName[i]">This is text Of Style</h1>
+</div>
+<button (click)="changeColor()">Change color</button> -->
+<br>
+
+Binding class
+
+<div [class]="classNames[i]">
+</div>
+<button (click)="changeColor()">Change color</button>

@@ -1,0 +1,21 @@
+<h1>ngIf</h1>
+<p *ngIf="isShowed">Is showing</p>
+<p *ngIf="!isShowed">Is not showing</p>
+
+<button (click)="isShowed=!isShowed ">Toggle</button>
+
+<br>
+--------------------------------------------------------------------------------------------------------------------
+<h1>ngfor</h1>
+<label for="id"><input type="text" id="id" placeholder="ID" [(ngModel)]="id"></label><br>
+<label for="name"><input type="text" id="name" placeholder="Name" [(ngModel)]="name"></label><br>
+<label for="job"><input type="text" id="job" placeholder="Job" [(ngModel)]="job"></label><br>
+<label for="isStudent"><input type="checkbox" id="isStudent" placeholder="Is Student" [(ngModel)]="isStudent"></label><br>
+<button (click)="addNew()">Create</button>
+<br>
+
+
+<div *ngFor="let i of datas; let idx = index">
+    {{'Index: '+idx}} | {{'Name: '+i.name}}| {{'Job: '+i.job}}
+    <h1>{{ i.isStudent}}</h1>
+</div>
